@@ -1,0 +1,118 @@
+* { /*selector global*/ 
+box-sizing:border-box;
+margin:0;
+padding:0;
+font-family: 'Times New Roman', Times, serif;
+scroll-behavior: smooth;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 50px;
+background-color: slateblue;
+color: white;
+position: fixed;
+width: 100%;
+top: 0;
+z-index: 10;
+filter: drop-shadow(0 2px 4px #000000)
+}
+
+.nav-links {
+display: flex;
+list-style: none;
+}
+
+.nav-links li {
+margin: 0 5px;
+}
+
+.nav-links li a {
+    font-size: 2.2vh;
+    color: lightgreen;
+    text-decoration: none;
+    padding: 8px 10px;
+    transition: background-color 0,3s ease;
+
+}
+
+.nav-links li a:hover {
+    background-color: aquamarine;
+    color: blue;
+    border-radius: 4px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #f2f2f2;
+    margin: 5px;
+    transition: all 0,3s ease;
+}
+
+#Home{
+    background-color: crimson;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(/assets/secondImage-2025-09-17T15-16-17-247Z.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#Homeh1{
+    color: cornflowerblue;
+}
+
+#About{
+background-color: fuchsia;
+}
+
+#Exp{
+    background-color: black;
+}
+
+#Contact{
+    background-color: aliceblue;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px 50px 50px;
+}
+
+@media screen and (max-width: 720px) {
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: aqua;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+    }    
+
+    .nav-links.tampil{
+        display: flex;
+    }
+
+    .nav-links li{
+        margin: 15px 0;
+    }
+
+    .burger{
+        display: block;
+    }
+
+}
