@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -45,3 +46,180 @@
     <script src="script.js"></script>
 </body>
 </html>
+=======
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Ahmad Fadly Paling Fix</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Space Mono untuk kesan raw/techy neobrutalism -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <!-- Nav pakai position:fixed agar selalu terlihat saat scroll -->
+    <nav>
+        <div class="logo">Renkazuu<span>.</span>DEV</div>
+
+        <!-- ul = daftar link navigasi -->
+        <ul class="nav-links" id="menu">
+            <li><a href="#Home">HOME</a></li>
+            <li><a href="#About">ABOUT</a></li>
+            <li><a href="#Exp">EXPERIENCE</a></li>
+            <li><a href="#Contact">CONTACT</a></li>
+        </ul>
+
+        <!-- Burger: tombol 3 garis untuk layar kecil/mobile -->
+        <div class="burger" id="btn-burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <!-- ========== SECTION HOME ========== -->
+    <section class="hero" id="Home">
+        <!-- Badge kecil di atas judul -->
+        <div class="badge">✦ AVAILABLE FOR WORK</div>
+
+        <h1 class="hero-title">
+            HALO,<br>
+            <span class="stroke-text">NAMA SAYA</span><br>
+            AHMAD FADLY.
+        </h1>
+
+        <p class="hero-sub">
+            Mahasiswa ITH Ilmu Komputer'25 <strong>Pemula</strong>, memiliki minat dalam bidang <strong>Multimedia</strong> & <strong>Web Developer</strong>
+        </p>
+
+        <!-- Dua tombol CTA (Call to Action) -->
+        <div class="btn-group">
+            <a href="#About" class="btn btn-solid">LIHAT PROFIL →</a>
+            <a href="#Contact" class="btn btn-outline">HUBUNGI SAYA</a>
+        </div>
+
+        <!-- Dekorasi geometri pojok kanan bawah hero -->
+        <div class="hero-deco">
+            <div class="deco-box box1"></div>
+            <div class="deco-box box2"></div>
+            <div class="deco-box box3"></div>
+        </div>
+    </section>
+
+    <!-- ========== SECTION ABOUT ========== -->
+    <section class="hero" id="About">
+        <!-- Label section -->
+        <div class="section-label">[ 01 ] ABOUT ME</div>
+
+        <div class="about-grid">
+            <!-- Kartu foto / avatar -->
+            <div class="about-card img-card">
+                <div class="avatar-placeholder">
+                </div>
+            </div>
+
+            <!-- Kartu teks deskripsi -->
+            <div class="about-card text-card">
+                <h2>SIAPA<br>AKU?</h2>
+                <p>
+                   <Strong>Ahmad Fadly Anto</Strong> Mahasiswa <strong>Institut Teknologi BJ Habibie</strong> Progran Studi <strong>Ilmu Komputer </strong>Angkatan 25.
+                    Suka eksplorasi teknologi baru dan menulis kode yang bersih. Dan mahir dalam bidang design dan editing
+                </p>
+                <!-- Skills chips -->
+                <div class="skill-chips">
+                    <span class="chip">HTML/CSS</span>
+                    <span class="chip">JavaScript</span>
+                    <span class="chip">Python</span>
+                    <span class="chip">UI Design</span>
+                </div>
+            </div>
+
+            <!-- Kartu statistik kecil -->
+            <div class="about-card stat-card">
+                <div class="stat">
+                    <span class="stat-num">2+</span>
+                    <span class="stat-label">PROYEK</span>
+                </div>
+                <div class="divider-h"></div>
+                <div class="stat">
+                    <span class="stat-num">1</span>
+                    <span class="stat-label">TAHUN</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SECTION EXPERIENCE ========== -->
+    <section class="hero" id="Exp">
+        <div class="section-label light">[ 02 ] EXPERIENCE</div>
+
+        <!-- Timeline experience menggunakan list item dengan garis vertikal dari CSS -->
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="tl-dot"></div>
+                <div class="tl-card">
+                    <span class="tl-year">2026</span>
+                    <h3>Photographer & Media Staff</h3>
+                    <p>Bertanggung jawab atas dokumentasi visual dan produksi konten multimedia. Berhasil mengurasi dan menghasilkan aset foto berkualitas tinggi untuk kebutuhan publikasi.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="tl-dot"></div>
+                <div class="tl-card">
+                    <span class="tl-year">2025</span>
+                    <h3>Computer Science Student / Academic Projects</h3>
+                    <p>Menempuh studi Ilmu Komputer dan fokus mendalami pemrograman Python. Membangun beberapa projek dasar berorientasi pemecahan masalah.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="tl-dot"></div>
+                <div class="tl-card">
+                    <span class="tl-year">2024</span>
+                    <h3>Web Developer Intern (PT. Ambatron)</h3>
+                    <p>Mengembangkan komponen UI dashboard internal menggunakan React dan integrasi REST API guna meningkatkan efisiensi pemantauan data tim.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========== SECTION CONTACT ========== -->
+    <section class="hero" id="Contact">
+        <div class="section-label">[ 03 ] CONTACT</div>
+
+        <div class="contact-box">
+            <h2>MARI<br><span>BERKOLABORASI</span></h2>
+            <p>Punya proyek menarik? Atau sekadar ingin ngobrol soal teknologi? Drop pesan!</p>
+
+            <!-- Form sederhana dengan style neobrutalism -->
+            <div class="contact-form">
+                <input type="text" placeholder="NAMA KAMU" class="neo-input">
+                <input type="email" placeholder="EMAIL KAMU" class="neo-input">
+                <textarea placeholder="PESANMU..." class="neo-input" rows="4"></textarea>
+                <button class="btn btn-solid full-width">KIRIM PESAN →</button>
+            </div>
+
+            <!-- Sosmed links -->
+            <div class="social-links">
+                <a href="https://github.com/RenKazu25" class="social-btn">GITHUB</a>
+                <a href="https://wa.me/6285756634143" class="social-btn">WHATSAPP</a>
+                <a href="https://www.instagram.com/_ahmad.fadlyy/" class="social-btn">INSTAGRAM</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer sederhana -->
+    <footer>
+        <p></p>
+        <p>© Ahmad Fadly. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+>>>>>>> 6450874 (mengupdate portofolio final)
