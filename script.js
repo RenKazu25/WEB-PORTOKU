@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-const btnBurger = document.getElementById('btn-burger');
-const menuNav = document.getElementById('menu');
-
-btnBurger.addEventListener('click', function(){
-    menuNav.classList.toggle('tampil');
-});
-=======
 const burger = document.getElementById('btn-burger');
 const menu   = document.getElementById('menu');
 const links  = document.querySelectorAll('.nav-links li a');
@@ -45,4 +37,3 @@ const observer = new IntersectionObserver(
     { threshold: 0.15 }
 );
 document.querySelectorAll('.tl-card, .about-card, .contact-box').forEach(el => observer.observe(el));
->>>>>>> 6450874 (mengupdate portofolio final)
